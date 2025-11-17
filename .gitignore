@@ -1,0 +1,66 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# Environment variables
+.env
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Cache
+.cache/
+*.cache
+
+# Input/Output directories (but keep READMEs and examples)
+input/*
+!input/README.md
+!input/credentials.json.example
+!input/*.example
+output/*
+!output/README.md
+
+# Credentials (NEVER commit real credentials!)
+input/credentials.json
+credentials.json
+
+# Token cache (NEVER commit tokens!)
+input/.token_cache.json
+.token_cache.json
+
+# Output files
+*.postman_collection.json
+!examples/*.postman_collection.json
+*_RESUMO.txt
+

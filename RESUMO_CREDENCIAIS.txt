@@ -1,0 +1,65 @@
+=======================================================================
+SISTEMA DE CREDENCIAIS ULTRA-SIMPLES
+=======================================================================
+
+CONCEITO: Credenciais Genéricas + IA Inteligente
+
+Você coloca os dados → A IA descobre como usar
+
+=======================================================================
+
+📁 ARQUIVO: input/credentials.json
+
+FORMATO:
+{
+  "username": "seu-usuario",
+  "password": "sua-senha",
+  "token": "seu-token",
+  "api_key": "sua-chave"
+}
+
+Coloque apenas os campos que você tem!
+
+=======================================================================
+
+🎯 COMO FUNCIONA:
+
+1. Você cria credentials.json com seus dados
+2. A IA analisa a documentação da API  
+3. A IA detecta o método de autenticação
+4. A IA usa os campos corretos automaticamente
+
+EXEMPLOS:
+
+→ Se a doc menciona "Bearer Token":
+  Usa o campo "token" como Bearer
+
+→ Se a doc menciona "Basic Auth":
+  Usa "username" e "password" em Basic
+
+→ Se a doc menciona "API Key":
+  Usa "api_key" no header correto
+
+→ Se é SOAP com WS-Security:
+  Usa "username" e "password" no SOAP Header
+
+=======================================================================
+
+✅ VANTAGENS:
+
+• Zero configuração
+• IA descobre tudo
+• Apenas dados genéricos
+• Funciona com qualquer API
+• Sem carga mental
+
+=======================================================================
+
+🚀 USO:
+
+# 1. Crie credentials.json com seus dados
+cat > input/credentials.json << 'EOF'
+{
+  "username": "usuario",
+  "password": "senha"
+}
